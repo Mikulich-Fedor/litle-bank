@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#btn-Start {
+  border: none;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+#btn-Start:hover {
+  background: #dd8706da;
+  transition: 2s;
+}
+#main {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+h2 {
+  text-align: center;
+}
+#banck-carrency {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  padding: 20px;
+}
+#banck-carrency h2 {
+  grid-row: 50px;
+  grid-row: 20px;
+  grid-column: 1/3;
+}
+#banck-carrency_name {
+  text-align: center;
+}
+#banck-carrency_value {
+  text-align: center;
+}
+#conversion {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+input,
+select {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: 4px 30%;
+  padding: 5px 10px;
+}
+option {
+  border: none;
+}
+
+#calculater {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#calculater label {
+  text-align: center;
+}
+#btn-close {
+  display: grid;
+  grid-column: 1/4;
+  margin: 0px 40%;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+#btn-close:hover {
+  background: #dd8706da;
+  transition: 2s;
+}

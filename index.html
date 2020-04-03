@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Bank</h1>
+      <button id="btn-Start">Вход</button>
+    </header>
+    <section id="main">
+      <div id="banck-carrency">
+        <h2>Курс валют на сегодня</h2>
+        <div id="banck-carrency_name">
+          <div id="banck-carrency_usd">Доллар США</div>
+          <div id="banck-carrency_euro">Евро</div>
+          <div id="banck-carrency_ru">Российский рубль</div>
+          <div id="banck-carrency_gr">Гривна</div>
+        </div>
+        <div id="banck-carrency_value">
+          <div id="banck-carrency_course-usd">США</div>
+          <div id="banck-carrency_course-euro">Евро</div>
+          <div id="banck-carrency_course-ru">Рубль</div>
+          <div id="banck-carrency_course-gr">Гривна</div>
+        </div>
+      </div>
+      <div id="conversion">
+        <h2>Конвертация валют</h2>
+        <input id="conversion_valueBYN" type="text" placeholder="Введите BYN" />
+        <select id="conversion_currency" name="conversion">
+          <option value="0">Выберите</option>
+          <option value="usd">Доллар США</option>
+          <option value="euro">Евро</option>
+          <option value="ru">Российский рубль</option>
+          <option value="gr">Гривна</option>
+        </select>
+        <input id="conversion_result" type="text" readonly name="result" />
+      </div>
+
+      <div id="calculater">
+        <h2>Рассчет кредита</h2>
+        <label for="enter">Введите необходимую сумму</label>
+        <input id="enter" type="text" placeholder="Введите BYN" />
+        <label for="percent">Выберите процент:</label>
+        <select name="percent" id="percent">
+          <option value="0">Выберите</option>
+          <option value="5">5%</option>
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+        </select>
+        <label for="year">Выберите количество лет:</label>
+        <select name="year" id="year">
+          <option value="0">Выберите</option>
+          <option value="1">1 Год</option>
+          <option value="2">2 Года</option>
+          <option value="3">3 Года</option>
+          <option value="4">4 Года</option>
+          <option value="5">5 Лет</option>
+        </select>
+
+        <label for="calculater_result">Платеж в месяц составит:</label>
+        <input id="calculater_result" type="text" readonly name="result" />
+      </div>
+      <button id="btn-close">Выйти</button>
+    </section>
+
+    <script src="./js/conversion.js"></script>
+    <script src="./js/counse.js"></script>
+    <script src="./js/start-close.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/calc.js"></script>
+  </body>
+</html>
